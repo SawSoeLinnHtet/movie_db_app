@@ -4,14 +4,19 @@
   box-sizing: border-box;
 }
 body{
-  background-color: rgb(255, 159, 255);
-  overflow-x: hidden;
+   background: rgba(238,215,161,1);
 }
 .heading{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+.links{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 50px;
 }
 .title{
   font-size: 17px;

@@ -18,21 +18,73 @@ export default {
 </script>
 
 <template>
-  <div class="container-fluid p-0 g-0">
-    <header class="">
+  <div class="container-fluid p-0 g-0 position-relative">
+    <header>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark mb-lg-5">
+        <a class="navbar-brand" href="#">The MOVIE.db</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Popular</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Genres
+              </a>
+              <div class="dropdown-menu bg-dark">
+                <a class="dropdown-item text-warning" href="#">Action</a>
+                <a class="dropdown-item text-warning" href="#">Comedy</a>
+                <a class="dropdown-item text-warning" href="#">Horror</a>
+                <a class="dropdown-item text-warning" href="#">Super Heros</a>
+                <a class="dropdown-item text-warning" href="#">Anime</a>
+                <a class="dropdown-item text-warning" href="#">See More</a>
+              </div>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+            <button
+              type="button"
+              class="btn btn-sm btn-outline-primary mt-2 mt-md-0 mt-lg-0"
+            >
+              Log In
+            </button>
+            <button
+              class="btn btn-sm btn-success ml-0 ml-md-2 ml-lg-2 mt-2 mt-md-0 mt-lg-0"
+            >
+              Sign Up
+            </button>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <section class="movies-list">
       <div class="heading mt-5">
         <h2>Trending Movies</h2>
         <span class="d-block text-center mt-3 mb-3">
           Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ex suscipi
         </span>
       </div>
-      <div class="links mt-2 mb-3 bg-info p-2">
-        <a href="#" class="text-white">Trending Today</a>
-        <a href="#" class="ml-3 text-white">Latest</a>
-      </div>
-    </header>
-    <section class="movies-list">
-      <div class="container-fluid p-2">
+      <div class="container-xl">
         <div class="row">
           <div
             v-for="movie in movies"
