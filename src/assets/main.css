@@ -1,0 +1,33 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: rgb(255, 159, 255);
+  overflow-x: hidden;
+}
+.heading{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.title{
+  font-size: 17px;
+  display: block;
+  font-weight: 600;
+}
+.card-text p a{
+  font-size: 20px;
+  text-decoration: none;
+}
+.heart{
+  color: pink;
+}
+.add{
+  color: red;
+}
+.download{
+  color: lightgreen;
+}
