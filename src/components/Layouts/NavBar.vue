@@ -1,6 +1,6 @@
 <template>
   <header>
-      <nav class="navbar navbar-expand-md navbar-dark bg-olive mb-2 mb-lg-4">
+      <nav class="navbar navbar-expand-md navbar-dark bg-olive mb-2 mb-lg-4  fixed-top overflow-hidden">
         <a class="navbar-brand" href="#">The MOVIE.db</a>
         <button
           class="navbar-toggler"

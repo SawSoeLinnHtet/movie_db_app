@@ -1,5 +1,5 @@
 <template>
-  <ul class="pagination pagination-md justify-content-end mt-2 mb-5">
+  <ul class="pagination pagination-md justify-content-center justify-content-lg-end mt-2 mb-3">
     <li class="page-item">
       <button
         type="button"
@@ -81,11 +81,10 @@
     },
     computed: {
       startPage() {
-        // When on the first page
-        if (this.currentPage === 1) {
+        if (this.currentPage === 1) { 
           return 1;
         }
-        return this.currentPage - 1; // 2
+        return this.currentPage - 1; 
       },
       pages() {
         const range = [];
@@ -113,10 +112,10 @@
         this.$emit('pageChanged', 1);
       },
       onClickPreviousPage() {
-        this.$emit('pageChanged', this.currentPage - 1);
+        this.$emit('pageChanged', this.currentPage - 1); //2
       },
       onClickPage(page) {
-        this.$emit('pageChanged', page);
+        this.$emit('pageChanged', page); 
       },
       onClickNextPage() {
         this.$emit('pageChanged', this.currentPage + 1);

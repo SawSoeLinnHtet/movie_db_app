@@ -10,9 +10,11 @@
     "lint": ".js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore"
   },
   "dependencies": {
-    "date-and-time": "^2.4.1",
+    "axios": "^1.2.2",
+    "moment": "^2.29.4",
     "vue": "^3.2.45",
-    "vue-router": "^4.1.6"
+    "vue-router": "^4.1.6",
+    "vue3-radial-progress": "^1.1.1"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.0.0",

@@ -4,13 +4,15 @@
   box-sizing: border-box;
 }
 body{
-   background: rgb(32, 29, 29);
+  padding: 0;
+  margin: 0;
+  background-color: #000;
 }
 .bg-olive{
   background-color: #3d550c;
 }
 .text-olive{
-  background-color: #3d550c;
+  color: #3d550c;
 }
 .bg-lime{
   background-color: #81b622;
@@ -42,33 +44,27 @@ body{
   align-items: center;
   justify-content: center;
 }
+.movies-list{
+  padding-top: 70px;
+}
 .title{
   display: block;
   font-weight: 600;
+  font-size: 1.3rem;
 }
 .info-title{
-  font-size: 13px;
+  font-size: 0.7rem;
   margin-right: 5px;
 }
-img{
-  min-height: 300px;
-  image-orientation: flip;
-  overflow: hidden;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+.info-text{
+  font-size: 0.7rem;
 }
 .card-text{
+  background-color: #03240b;
+  min-height: auto;
+  padding-bottom: 20px;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
-}
-.action{
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #000;
-}
-.action a:hover{
-  text-decoration: none;
 }
 .page-item.active .page-link{
   background-color: #81b622 !important;
@@ -82,28 +78,36 @@ img{
 .download{
   color: green;
 }
-.row.equal-cols {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-wrap: wrap;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
+.copyright{
+  font-size: 12px;
 }
-.row.equal-cols:before,
-.row.equal-cols:after {
-  display: block;
+.img-wrap{
+  position: relative;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
-.row.equal-cols > [class*='col-'] {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-flex-direction: column;
-  -ms-flex-direction: column;
-  flex-direction: column;
+.poster-wrap img{
+  width: 100%;
+  min-height: 290px;
+  image-orientation: flip;
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  background-color: #03240b;
 }
-.row.equal-cols > [class*='col-'] > * {
-  -webkit-flex: 1 1 auto;
-  -ms-flex: 1 1 auto;
-  flex: 1 1 auto; 
+.rating-area{
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 5px;
+  margin-right: 5px;
+}
+.poster-wrap:hover img{
+  opacity: 1;
+}
+.web-footer{
+  width: 100%;
+  position: sticky;
+  bottom: 0;
 }
